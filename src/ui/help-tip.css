@@ -1,0 +1,42 @@
+.product-help {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.product-help__trigger {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: help;
+  font: inherit;
+}
+
+.product-help__trigger:focus-visible {
+  outline: 2px solid #79d9ff;
+  outline-offset: 2px;
+}
+
+.product-help__content {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 4px);
+  left: 0;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 32px));
+  padding: 10px 12px;
+  border: 1px solid #596987;
+  border-radius: 8px;
+  background: #182239;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  white-space: normal;
+  box-shadow: 0 8px 24px #0005;
+}
